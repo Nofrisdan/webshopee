@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="logoShopee1.png">
+        <title> Shopee Indonesia | Jual Beli di Ponsel dan Online</title>
+        <style>
+            /*menu 1 header*/
+            .menu1{
+                border: 1px solid;
+                height: 50px;
+                position: relative;
+                margin-left: 10px;
+                padding-left: 900px;
+                background-color: rgb(255, 69,0 );
+                border-color: rgb(255, 69,0 );
+            }
+            .menu1 ul li{
+                list-style-type: none;
+            }
+            .menu1 ul ul{
+                display: none;
+                position: absolute;
+                margin-top: 20px;
+                border: 1px none;
+                width: 300px;
+                height: 300px;
+                padding-left: 5px;
+                margin-left: -230px;
+                background-color: white;
+            }
+            .menu1 ul li:hover ul{
+                display: block;
+            }
+            .dropdown a{
+                margin-top: 250px;
+                margin-right: 40px;
+            }
+            .menu1 a{
+                text-decoration: none;
+                color:white;
+                float: left;
+                margin-left: 15px;
+                font-size: 13px;
+            }
+            .menu1 img{
+                margin-right: 3px;
+            }
+            /*menu 2*/
+            .menu2{
+                border: 1px none;
+                height: 50px;
+                position: absolute;
+                width: 400px;
+                margin-top: -50px;
+                margin-left: 30px;
+            }
+            .menu2 ul{
+                list-style-type: none;
+            }
+            .menu2 a{
+                text-decoration: none;
+                color: white;
+                float: left;
+                margin-right: 10px;
+                font-size: 13px;
+            }
+            .dropdownImg {
+                display: none;
+                position: absolute;
+                border: 1px none;
+                margin-top: 20px;
+                margin-left: 12px;
+                height: 150px;
+                width: 150px;
+                background-color: white;
+                border-color: white;
+            }
+            .menu2 ul li:hover .dropdownImg{
+                display: block;
+            }
+
+            /* input menu*/
+            .input{
+                margin-left: 10px;
+                padding-left: 300px;
+                margin-top:-2px;
+                border: 1px none;
+                height: 66px;
+                padding-top: 20px;
+                background-color: rgb(255, 69,0 );
+                padding-bottom: 0px;
+            }
+            .input input{
+                width: 775px;
+                height: 40px;
+            }
+            .input button{
+                margin-top: 4px;
+                margin-left: -70px;
+                height: 35px;
+                background-color: rgb(255, 69,0 );
+                position: absolute;
+            }
+            /*LOGO*/
+            .logo2{
+                
+                margin-top: -150px;
+                margin-left: 70px;
+            }
+            /*MENU 3*/
+            .menu3{
+                border: 1px none;
+                height: 30px;
+                margin-left: 270px;
+                margin-right: 40px;
+                margin-top: -40px;
+            }
+            .menu3 ul li{
+                list-style-type: none;
+            }
+            .menu3 a{
+                text-decoration: none;
+                float: left;
+                margin-right: 20px;
+                font-size: 11px;
+                color: white;
+            }
+            /* KERANJANG*/
+            .Keranjang{
+                position: absolute;
+                margin-left: 1150px;
+                margin-top: -70px;
+            }
+            .Keranjang a:hover p{
+                display:block;
+            }
+            .Keranjang p{
+                position: absolute;
+                border: 1px none;
+                height: 100px;
+                width: 300px;
+                margin-left: -280px;
+                text-align: center;
+                padding-top: 150px;
+                margin-bottom: 0px;
+                margin-top: 5px;
+                display: none;
+                background-color:white;
+
+            }
+            .Keranjang a{
+                text-decoration: none;
+                color:rgb(51, 43, 43);
+            }
+            /*content*/
+            .content1{
+                margin-left: 10px;
+                margin-top: -9px;
+            }
+            .content2{
+                border: 1px none;
+                position: relative;
+                margin-left: 10px;
+                height: 90px;
+                padding-top: 20px;
+                padding-left: 50px;
+                background-color: white;
+                border-color:black;
+            }
+            .content2 a{
+                margin-right: 20px;
+                border: 1px none;
+            }
+            .zoom-effect{}
+            .content2 img{
+                position: absolute;
+               
+            }
+            .zoom-effect:hover .gambar1{
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+            }
+            .gambar1{
+                -webkit-transition: 0.4s ease;
+                transition: 0.4s;
+            }
+            .zoom-effect:hover .gambar2{
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+            }
+            .gambar2{
+              margin-left: 45px;
+              margin-top:-5px ;
+              -webkit-transition: 0.4s ease;
+                transition: 0.4s;
+            }
+            .zoom-effect:hover .gambar3{
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+            }
+            .gambar3{
+              margin-left: 102px;
+              margin-top:-12px ;
+              -webkit-transition: 0.4s ease;
+                transition: 0.4s;
+            }
+            .zoom-effect:hover .gambar4{
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+            }
+            .gambar4{
+              margin-left: 158px;
+              margin-top:-15px ;
+              -webkit-transition: 0.4s ease;
+                transition: 0.4s;
+            }
+            .zoom-effect:hover .gambar5{
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+            }
+            .gambar5{
+              margin-left: 214px;
+              margin-top:-16px ;
+              -webkit-transition: 0.4s ease;
+                transition: 0.4s;
+            }
+            .zoom-effect:hover .gambar6{
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+            }
+            .gambar6{
+              margin-left: 269px;
+              margin-top:-17px ;
+              -webkit-transition: 0.4s ease;
+                transition: 0.4s;
+            }
+            .zoom-effect:hover .gambar7{
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+            }
+            .gambar7{
+              margin-left: 325px;
+              margin-top:-18px ;
+              -webkit-transition: 0.4s ease;
+                transition: 0.4s;
+            }
+            .zoom-effect:hover .gambar8{
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+            }
+            .gambar8{
+              margin-left: 380px;
+              margin-top:-18px ;
+              -webkit-transition: 0.4s ease;
+                transition: 0.4s;
+            }
+            .zoom-effect:hover .gambar9{
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+            }
+            .gambar9{
+              margin-left: 435px;
+              margin-top:-18px ;
+              -webkit-transition: 0.4s ease;
+                transition: 0.4s;
+            }
+            .zoom-effect:hover .gambar10{
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+            }
+            .gambar10{
+              margin-left: 492px;
+              margin-top:-22px ;
+              -webkit-transition: 0.4s ease;
+                transition: 0.4s;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <div class="menu1">
+            <ul>
+                <li><a href="#1"><img src="notifikasi.png" width="13px" height="13px">Notifikasi</a>
+                    <ul class="dropdown">
+                        <li><a href=""><button>Daftar</button></a></li>
+                        <li><a href=""><button>Login</button></a></li>
+                    </ul>
+                </li>
+                <li><a href="#1"><img src="bantuan.png" width="13px" height="13px">Bantuan</a></li>
+                <li><a href="#1">Daftar |</a></li>
+                <li><a href="#1">Login</a></li>
+            </ul>
+        </div>
+        <div class="menu2">
+            <ul>
+                <li><a href="">Jual |</a></li>
+                <li><a href="">Dwonload |</a>
+                    <img class="dropdownImg"src="logoShopee1.png" width="30px" height="30px">
+                </li>
+                <li><a href="">Ikuti Kami Di </a>
+                    <a title="ikuti kami di facebook" href=""><img src="fb2.png" width="18px" height="18px"></a>
+                    <a title="ikuti kami di Instagram" href=""><img src="ig2.png" width="15px" height="15px"></a>
+                    <a title="ikuti kami di Line" href=""><img src="line.png" width="15px" height="13px"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="input">
+            <input placeholder="Adidas Diskon s/d 75%">
+            <a href="#1"><button><img src="logocari.png" width="30px" height="30px"></button></a>
+        </div>
+        <div class="logo2">
+        <a href="#"><img src="logoshopee3-removebg-preview.png" width="200px" height="100px"></a>
+    </div>
+    <div class="menu3">
+        <ul>
+            <li><a href="#1"> Daster Arab</a></li>
+            <li><a href="#1"> Helm Bogo</a></li>
+            <li><a href="#1"> Sepatu Converse</a></li>
+            <li><a href="#1"> Masker Sensi</a></li>
+            <li><a href="#1"> Jilbab Instant</a></li>
+            <li><a href="#1"> Piyama Anak</a></li>
+            <li><a href="#1"> Speaker Bluetoth</a></li>
+            <li><a href="#1"> Sepeda Poligon</a></li>
+        </ul>
+    </div>
+    <div class="Keranjang">
+        <a href="#1"><img src="keranjang2.jpg" width="40px" height="40px">
+            <p>Belum Ada Produk</p>
+        </a>
+    </div>
+    <div class="content1">
+        <img src="content1.png" width="1268px" height="">
+    </div>
+
+    <div class="content2">
+        <div class="zoom-effect">
+        <div class="gambar1">
+            <a href="#"><img class="gambar1"src="gambar1.png"></a>
+        </div>
+        </div>
+
+        <div class="zoom-effect">
+        <div class="gambar2">
+        <a href="#"><img class="gambar2"src="gambar2.png"></a>
+    </div>
+        </div>
+
+        <div class="zoom-effect">
+        <div class="gambar3">
+            <a href="#"><img class="gambar3"src="gambar3.png"></a>
+            </div>
+        </div>
+
+            <div class="zoom-effect">
+            <div class="gambar4">
+                <a href="#"><img class="gambar4"src="gambar4.png"></a>
+                </div>
+                </div>
+
+                <div class="zoom-effect">
+                <div class="gambar5">
+                    <a href="#"><img class="gambar5"src="gambar5.png"></a>
+                    </div>
+                    </div>
+
+                    <div class="zoom-effect">
+                    <div class="gambar6">
+                        <a href="#"><img class="gambar6"src="gambar6.png"></a>
+                        </div>
+                        </div>
+
+                        <div class="zoom-effect">
+                        <div class="gambar7">
+                            <a href="#"><img class="gambar7"src="gambar7.png"></a>
+                            </div>
+                            </div>
+                            <div class="zoom-effect">
+                            <div class="gambar8">
+                                <a href="#"><img class="gambar8"src="gambar8.png"></a>
+                                </div>
+                                </div>
+                                <div class="zoom-effect">
+                                <div class="gambar9">
+                                    <a href="#"><img class="gambar9"src="gambar9.png"></a>
+                                    </div>
+                                    </div>
+                                    <div class="zoom-effect">
+                                    <div class="gambar10">
+                                        <a href="#"><img class="gambar10" src="gambar10.png"></a>
+                                    </div>
+                                    </div>
+    </div>
+    </body>
+</html>
